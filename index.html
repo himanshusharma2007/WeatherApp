@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body class="bg-white min-h-screen flex justify-center items-center">
+  <div class="container w-full lg:w-1/2   mx-auto p-8 bg-white rounded-lg shadow-xl">
+    <h1 class="text-4xl font-bold text-center mb-6 text-blue-800">Weather App</h1>
+    <div class="flex flex-col space-y-4">
+      <input class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="text" id="countryName" placeholder="Country">
+      <input class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="text" id="stateName" placeholder="State">
+      <input class="border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" type="text" id="cityName" placeholder="City">
+      <button class="btn w-32 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600" id="CheckWeather">Check</button>
+    </div>
+    <div class="flex justify-center items-center  flex-col mt-4 lg:mt-8">
+      <img class="w-32" src="sunfig.png" alt="">
+      <h2 id="Weather-city" class="text-2xl font-bold mb-4 text-blue-800">Jaipur</h2>
+      <h1 class="text-4xl font-bold  m-3 mt-0 uppercase text-center" id="temp"></h1>
+      <table class="w-full border border-gray-300 rounded-md">
+        <thead class="bg-blue-500 text-white">
+          <tr>
+            <th class="px-4 py-2">Feels Like</th>
+            <th class="px-4 py-2">Min Temp</th>
+            <th class="px-4 py-2">Max Temp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b w-full text-center border-gray-300">
+            <td id="FeelsLike" class="px-4 py-2 text-lg font-semibold"></td>
+            <td id="MinTemp" class="px-4 py-2 text-lg font-semibold"></td>
+            <td id="MaxTemp" class="px-4 py-2 text-lg font-semibold"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
